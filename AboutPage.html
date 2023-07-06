@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,400&display=swap" rel="stylesheet">
+        <title>College Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="HomePage.html"><img src="images/Logo.avif"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="HomePage.html">HOME</a></li>
+                        <li><a href="AboutPage.html">ABOUT</a></li>
+                        <li><a href="CoursePage.html">COURSE</a></li>
+                        <li><a href="BlogPage.html">BLOG</a></li>
+                       <li><a href="ContactPage.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!---------about us content----------->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>The Bharathiyar University is a State university located in Coimbatore, Tamil Nadu, India. Established in February 1982, it is named after the great revolutionary Tamil poet, Subramania Bharathiyar. The university is recognized by the University Grants Commission and accredited by NAAC with ‘A’ grade.
+
+                        The university is a residential cum teaching one with a campus of about 100 acres. The university has 38 departments, 4 post graduate research centers, 1 constituent college and 3 autonomous colleges offering more than 150 programs.</p>
+
+                        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/aboutUs.jpeg">
+                </div>
+            </div>
+        </section>
+
+  
+
+
+
+
+
+
+
+
+        <!--------footer------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We are a team of experienced professionals dedicated to providing our 
+               customers with the highest quality products and services. Our team consists of experts in various fields such as<br>
+               engineering, product design, and customer service. We strive to offer the best solutions to our customers, while ensuring that
+               they are satisfied with their purchase.</p>
+               <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+               </div>
+               <p>Made with <i class="fa fa-heart"></i> by Vigensh</p>
+        </section>
+
+
+
+
+
+    <!-------Javascript for toggle menu----->
+
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,400&display=swap" rel="stylesheet">
+        <title>College Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="HomePage.html"><img src="images/Logo.avif"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="HomePage.html">HOME</a></li>
+                        <li><a href="AboutPage.html">ABOUT</a></li>
+                        <li><a href="CoursePage.html">COURSE</a></li>
+                        <li><a href="BlogPage.html">BLOG</a></li>
+                       <li><a href="ContactPage.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificate & Online Programs for 2023</h1>
+
+        </section>
+        <!--------blog page content-------->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certification.jpeg" alt="certification">
+                    <h2>Our Certificate & Online Programs for 2023</h2>
+                    <p>Bharathiyar University offers a variety of certification courses to students and professionals who are keen to upgrade their skills and knowledge. The courses provide an opportunity to gain expertise in a specific area and equip them with the necessary tools to succeed in the competitive job market. These courses are designed to help students gain the skills and knowledge needed to excel in their chosen field. </p>
+                    <br>
+                    <p>The certification courses are available in a range of disciplines such as management, finance, engineering, IT, hospitality, and healthcare. These courses are tailored to the needs of the student, providing a comprehensive approach to learning that enables them to expand their knowledge and improve their career prospects. The university also provides valuable advice and guidance on career development, helping students to make informed decisions about their future.</p>
+                    <br>
+                    <p>The certification courses also help professionals to stay current with the latest trends and technologies in their field. Students can gain valuable insights into the industry and hone their skills to ensure they stay ahead of the competition. Additionally, the courses provide the opportunity to network with industry professionals and build contacts that can be beneficial in the future.</p>
+                    <br>
+                    <p>
+                        Overall, certification courses from Bharathiyar University offer an excellent way for students and professionals to increase their knowledge and improve their career prospects. The courses provide the necessary skills and knowledge to succeed in their chosen field, and the university provides advice and guidance to ensure students make the right choices for their future.</p>
+
+
+                        <div class="comment-box">
+                            <h3>Leave a Comment</h3>
+                            <form class="comment-form">
+                                <input type="text" placeholder="Enter Name">
+                                <input type="email" placeholder="Entrer Email">
+                                <textarea rows="5" placeholder="Your comment"></textarea>
+                                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+
+                            </form>
+                        </div>
+
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Machine Learning</span>
+                        <span>25</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>45</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+  
+
+
+
+
+
+
+
+
+        <!--------footer------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>We are a team of experienced professionals dedicated to providing our 
+               customers with the highest quality products and services. Our team consists of experts in various fields such as<br>
+               engineering, product design, and customer service. We strive to offer the best solutions to our customers, while ensuring that
+               they are satisfied with their purchase.</p>
+               <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+               </div>
+               <p>Made with <i class="fa fa-heart"></i> by Vigensh</p>
+        </section>
+
+
+
+
+
+    <!-------Javascript for toggle menu----->
+
+        <script>
+            var navLinks=document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+
+    </body>
+</html>
